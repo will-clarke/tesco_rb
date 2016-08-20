@@ -14,9 +14,9 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
 
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = 'https://rubygems.org'
+    spec.metadata['allowed_push_host'] = 'https://rubygems.org'
   else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
+    raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
@@ -32,7 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry-byebug', '~> 3.4.0'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'minitest', '~> 5.0'
-  # spec.add_development_dependency 'minitest-vcr', '~> 1.4.0'
   spec.add_development_dependency 'vcr', '~> 3.0.3'
   spec.add_development_dependency 'webmock', '~> 2.1.0'
   spec.add_development_dependency 'dotenv', '~> 2.1.1'

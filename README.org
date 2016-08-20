@@ -35,8 +35,11 @@ $ bundle
 $ gem install tesco_rb
 #+END_SRC
 
-
-*** Todos
-    - `client.item.search('bananas')` syntax; add `.search` method
+*** Todo
+    - ~client.item.search('bananas')~ syntax; add ~.search~ method
       - This would involve creating new 'items' holding class (currently just an Array)
     - DRY / subclass requesters
+    - Sort out travis CI
+    - More examples about returned objects??
+    - OpeningHours Object
+    - GeoLocation Object

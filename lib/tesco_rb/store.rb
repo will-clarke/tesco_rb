@@ -31,8 +31,5 @@ module TescoRb
       end
     end
 
-    # def set_fields
-    #   fields.each { |field| attr_reader field }
-    # end
   end
 end
