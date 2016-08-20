@@ -1,4 +1,5 @@
-require "tesco_rb/store_requester"
+require 'tesco_rb/store_requester'
+require 'tesco_rb/item_requester'
 require 'httparty'
 
 module TescoRb
@@ -15,6 +16,10 @@ module TescoRb
 
     def store(options = {})
       StoreRequester.new.create_representations(self, options)
+    end
+
+    def item(options = {})
+      ItemRequester.new.create_representations(self, options)
     end
 
     def get(url, options = {})

@@ -8,7 +8,8 @@ module TescoRb
 
     def self.fields
       [:id, :name, :altIds, :region, :geo,
-       :classification, :status, :facilities]
+       :classification, :status, :facilities,
+       :openingHours]
     end
 
     attr_reader(*fields)
@@ -30,8 +31,8 @@ module TescoRb
       end
     end
 
-    def set_fields
-      fields.each { |field| attr_reader field }
-    end
+    # def set_fields
+    #   fields.each { |field| attr_reader field }
+    # end
   end
 end

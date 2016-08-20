@@ -1,0 +1,146 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dev.tescolabs.com/grocery/products?limit=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Ocp-Apim-Subscription-Key:
+      - TESCO_API_KEY
+  response:
+    status:
+      code: 404
+      message: Resource Not Found
+    headers:
+      Content-Length:
+      - '54'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 20 Aug 2016 14:32:53 GMT
+    body:
+      encoding: UTF-8
+      string: '{ "statusCode": 404, "message": "Resource not found" }'
+    http_version: 
+  recorded_at: Sat, 20 Aug 2016 14:32:54 GMT
+- request:
+    method: get
+    uri: https://dev.tescolabs.com/grocery/products?limit=5&offset=0&query=bananas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Ocp-Apim-Subscription-Key:
+      - TESCO_API_KEY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+      Expires:
+      - Sat, 20 Aug 2016 15:31:19 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Dc:
+      - az1
+      X-Proxy-Cache:
+      - MISS
+      Date:
+      - Sat, 20 Aug 2016 15:31:18 GMT
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "uk" : {
+            "ghs" : {
+              "products" : {
+                "totals" : {
+                  "all" : 174,
+                  "new" : 2,
+                  "offer" : 58
+                },
+                "results" : [ {
+                  "image" : "http://img.tesco.com/Groceries/pi/000/0261480000000/IDShot_90x90.jpg",
+                  "tpnb" : 50502269,
+                  "PromotionDescription" : "25 extra points on any bananas",
+                  "ContentsMeasureType" : "KG",
+                  "name" : "Tesco Bananas Loose",
+                  "UnitOfSale" : 3,
+                  "AverageSellingUnitWeight" : 2.402,
+                  "UnitQuantity" : "KG",
+                  "ContentsQuantity" : 1.0,
+                  "price" : 0.68,
+                  "unitprice" : 0.68
+                }, {
+                  "image" : "http://img.tesco.com/Groceries/pi/875/0000010001875/IDShot_90x90.jpg",
+                  "tpnb" : 65728590,
+                  "ContentsMeasureType" : "SNGL",
+                  "PromotionDescription" : "25 extra points on any bananas",
+                  "name" : "Tesco Ripe Bananas 5 Pack",
+                  "UnitOfSale" : 1,
+                  "description" : [ "Eat Me Bananas" ],
+                  "AverageSellingUnitWeight" : 0.847,
+                  "UnitQuantity" : "EACH",
+                  "ContentsQuantity" : 5.0,
+                  "price" : 0.8,
+                  "unitprice" : 0.16
+                }, {
+                  "image" : "http://img.tesco.com/Groceries/pi/416/0000003251416/IDShot_90x90.jpg",
+                  "tpnb" : 77427870,
+                  "PromotionDescription" : "25 extra points on any bananas",
+                  "ContentsMeasureType" : "SNGL",
+                  "name" : "Tesco Small Bananas 6 Pack",
+                  "UnitOfSale" : 1,
+                  "AverageSellingUnitWeight" : 0.965,
+                  "description" : [ "Small Bananas" ],
+                  "UnitQuantity" : "EACH",
+                  "ContentsQuantity" : 6.0,
+                  "price" : 0.9,
+                  "unitprice" : 0.15
+                }, {
+                  "image" : "http://img.tesco.com/Groceries/pi/882/0000010001882/IDShot_90x90.jpg",
+                  "tpnb" : 65729767,
+                  "ContentsMeasureType" : "SNGL",
+                  "PromotionDescription" : "25 extra points on any bananas",
+                  "name" : "Tesco Bananas 5 Pack",
+                  "UnitOfSale" : 1,
+                  "AverageSellingUnitWeight" : 0.979,
+                  "UnitQuantity" : "EACH",
+                  "ContentsQuantity" : 5.0,
+                  "price" : 0.8,
+                  "unitprice" : 0.16
+                }, {
+                  "image" : "http://img.tesco.com/Groceries/pi/939/0000010112939/IDShot_90x90.jpg",
+                  "tpnb" : 67986118,
+                  "PromotionDescription" : "25 extra points on any bananas",
+                  "ContentsMeasureType" : "SNGL",
+                  "name" : "Tesco Organic Fair Trade Bananas 6 Pack",
+                  "UnitOfSale" : 1,
+                  "AverageSellingUnitWeight" : 0.915,
+                  "UnitQuantity" : "EACH",
+                  "ContentsQuantity" : 6.0,
+                  "price" : 1.39,
+                  "unitprice" : 0.232
+                } ],
+                "suggestions" : [ {
+                  "text" : "banana",
+                  "score" : 0.8333333,
+                  "freq" : 262
+                } ]
+              }
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 20 Aug 2016 15:31:20 GMT
+recorded_with: VCR 3.0.3
