@@ -7,8 +7,8 @@ module TescoRb
       json_response = parse_json(response)
       return [] unless json_response.is_a?(Hash) &&
                        json_response['results']
-      json_response['results'].map do |json_location|
-        Store.new(json_location)
+      json_response['results'].map do |json|
+        Store.new(json.fetch('location'))
       end
     end
 

@@ -13,11 +13,15 @@ module TescoRb
 
     attr_reader(*fields)
 
-    def initialize(json_location)
-      location = json_location['location']
+    def initialize(location)
       set self.class.fields, location
-      address_json = location.fetch('contact').fetch('address')
-      @address = Address.new(address_json)
+      begin
+        address_json = location.fetch('contact').
+                       fetch('address')
+        @address = Address.new(address_json)
+      rescue KeyError => e
+        p e
+      end
     end
 
     def ==(other)

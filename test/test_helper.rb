@@ -35,3 +35,14 @@ end
 class MiniTest::Test
   include VcrPlugin
 end
+
+def capture_stdout(&block)
+  original_stdout = $stdout
+  $stdout = fake = StringIO.new
+  begin
+    block.call
+  ensure
+    $stdout = original_stdout
+  end
+  fake.string
+end
