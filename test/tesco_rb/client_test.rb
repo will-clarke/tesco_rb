@@ -17,11 +17,9 @@ class ClientTest < Minitest::Test
   end
 
   def test_it_can_get_an_actual_connection
-    VCR.use_cassette(to_s) do
-      response = @client.get('/some_url')
-      assert_kind_of String, response.body
-      assert_equal response.code, 404
-    end
+    response = @client.get('/some_url')
+    assert_kind_of String, response.body
+    assert_equal response.code, 404
   end
 
 end

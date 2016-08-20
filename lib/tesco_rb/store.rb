@@ -15,9 +15,15 @@ module TescoRb
 
     def initialize(json_location)
       location = json_location['location']
-      set self.fields, location
+      set self.class.fields, location
       address_json = location.fetch('contact').fetch('address')
       @address = Address.new(address_json)
+    end
+
+    def ==(other)
+      self.class.fields.all? do |method_name|
+        send(method_name) == other.send(method_name)
+      end
     end
 
     def set_fields

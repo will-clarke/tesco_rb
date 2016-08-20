@@ -14,7 +14,7 @@ module TescoRb
     end
 
     def store(options = {})
-      StoreRequester.create_representations(self, options)
+      StoreRequester.new.create_representations(self, options)
     end
 
     def get(url, options = {})

@@ -1,0 +1,174 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dev.tescolabs.com/locations/search?limit=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Ocp-Apim-Subscription-Key:
+      - TESCO_API_KEY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '483'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+      Dc1:
+      - AWS1
+      Traceid:
+      - e6906ab7-6853-4e53-af47-a26b1b05c998
+      X-Interfaceversion:
+      - v3
+      X-Response-Time:
+      - 2ms
+      Date:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833ab","name":"Tesco
+        Aylesford CFC","altIds":{"branchNumber":5998},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Priory
+        Park"},{"lineNumber":1,"text":"Mills Road"}],"town":"Aylesford","postcode":"ME20
+        7PP"}},"geo":{"coordinates":{"longitude":0.46399,"latitude":51.289805}},"classification":{"category":"CFC"},"status":{"currentStatus":"Trading"},"facilities":[{"name":"DBT"}]}}]}'
+    http_version: 
+  recorded_at: Sat, 20 Aug 2016 10:36:34 GMT
+- request:
+    method: get
+    uri: https://dev.tescolabs.com/locations/search?limit=1&offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Ocp-Apim-Subscription-Key:
+      - TESCO_API_KEY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '483'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+      Dc1:
+      - AWS1
+      Traceid:
+      - a037916e-c0c2-4dcf-b1ca-0c508b418d45
+      X-Interfaceversion:
+      - v3
+      X-Response-Time:
+      - 2ms
+      Date:
+      - Sat, 20 Aug 2016 10:36:32 GMT
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833ab","name":"Tesco
+        Aylesford CFC","altIds":{"branchNumber":5998},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Priory
+        Park"},{"lineNumber":1,"text":"Mills Road"}],"town":"Aylesford","postcode":"ME20
+        7PP"}},"geo":{"coordinates":{"longitude":0.46399,"latitude":51.289805}},"classification":{"category":"CFC"},"status":{"currentStatus":"Trading"},"facilities":[{"name":"DBT"}]}}]}'
+    http_version: 
+  recorded_at: Sat, 20 Aug 2016 10:36:34 GMT
+- request:
+    method: get
+    uri: https://dev.tescolabs.com/locations/search?limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Ocp-Apim-Subscription-Key:
+      - TESCO_API_KEY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '1507'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+      Dc1:
+      - AWS1
+      Traceid:
+      - 9e524eff-56ec-4b5a-bb31-270e343a64dd
+      X-Interfaceversion:
+      - v3
+      X-Response-Time:
+      - 3ms
+      Date:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833ab","name":"Tesco
+        Aylesford CFC","altIds":{"branchNumber":5998},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Priory
+        Park"},{"lineNumber":1,"text":"Mills Road"}],"town":"Aylesford","postcode":"ME20
+        7PP"}},"geo":{"coordinates":{"longitude":0.46399,"latitude":51.289805}},"classification":{"category":"CFC"},"status":{"currentStatus":"Trading"},"facilities":[{"name":"DBT"}]}},{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833a9","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":101},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Whitemyres,
+        Lang Stracht"},{"lineNumber":1,"text":"New Park Farm"}],"town":"Aberdeen","postcode":"AB15
+        6AX"},"phoneNumbers":[{"alias":"Default","number":"0122 468 6000"}]},"geo":{"coordinates":{"longitude":-2.17827,"latitude":57.15158}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0600","close":"2400"},"tu":{"isOpen":"true","open":"0600","close":"2400"},"we":{"isOpen":"true","open":"0600","close":"2400"},"th":{"isOpen":"true","open":"0600","close":"2400"},"fr":{"isOpen":"true","open":"0600","close":"2400"},"sa":{"isOpen":"true","open":"0600","close":"2400"},"su":{"isOpen":"true","open":"0900","close":"1800"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}}]}'
+    http_version: 
+  recorded_at: Sat, 20 Aug 2016 10:36:34 GMT
+- request:
+    method: get
+    uri: https://dev.tescolabs.com/locations/search?limit=1&offset=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Ocp-Apim-Subscription-Key:
+      - TESCO_API_KEY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '1037'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+      Dc1:
+      - AWS1
+      Traceid:
+      - 8d0aa272-bb12-4c87-a233-874c7774dede
+      X-Interfaceversion:
+      - v3
+      X-Response-Time:
+      - 2ms
+      Date:
+      - Sat, 20 Aug 2016 10:36:32 GMT
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833a9","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":101},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Whitemyres,
+        Lang Stracht"},{"lineNumber":1,"text":"New Park Farm"}],"town":"Aberdeen","postcode":"AB15
+        6AX"},"phoneNumbers":[{"alias":"Default","number":"0122 468 6000"}]},"geo":{"coordinates":{"longitude":-2.17827,"latitude":57.15158}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0600","close":"2400"},"tu":{"isOpen":"true","open":"0600","close":"2400"},"we":{"isOpen":"true","open":"0600","close":"2400"},"th":{"isOpen":"true","open":"0600","close":"2400"},"fr":{"isOpen":"true","open":"0600","close":"2400"},"sa":{"isOpen":"true","open":"0600","close":"2400"},"su":{"isOpen":"true","open":"0900","close":"1800"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}}]}'
+    http_version: 
+  recorded_at: Sat, 20 Aug 2016 10:36:34 GMT
+recorded_with: VCR 3.0.3

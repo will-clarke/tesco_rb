@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dev.tescolabs.com/locations/search
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Ocp-Apim-Subscription-Key:
+      - TESCO_API_KEY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '9505'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+      Dc1:
+      - AWS1
+      Traceid:
+      - 1a5008bd-9e49-495e-a2c8-12aa5d372d53
+      X-Interfaceversion:
+      - v3
+      X-Response-Time:
+      - 4ms
+      Date:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833ab","name":"Tesco
+        Aylesford CFC","altIds":{"branchNumber":5998},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Priory
+        Park"},{"lineNumber":1,"text":"Mills Road"}],"town":"Aylesford","postcode":"ME20
+        7PP"}},"geo":{"coordinates":{"longitude":0.46399,"latitude":51.289805}},"classification":{"category":"CFC"},"status":{"currentStatus":"Trading"},"facilities":[{"name":"DBT"}]}},{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833a9","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":101},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Whitemyres,
+        Lang Stracht"},{"lineNumber":1,"text":"New Park Farm"}],"town":"Aberdeen","postcode":"AB15
+        6AX"},"phoneNumbers":[{"alias":"Default","number":"0122 468 6000"}]},"geo":{"coordinates":{"longitude":-2.17827,"latitude":57.15158}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0600","close":"2400"},"tu":{"isOpen":"true","open":"0600","close":"2400"},"we":{"isOpen":"true","open":"0600","close":"2400"},"th":{"isOpen":"true","open":"0600","close":"2400"},"fr":{"isOpen":"true","open":"0600","close":"2400"},"sa":{"isOpen":"true","open":"0600","close":"2400"},"su":{"isOpen":"true","open":"0900","close":"1800"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"1710c43c-197e-4416-9478-cf5d0107440a","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":102},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Eureka
+        Leisure Park"},{"lineNumber":1,"text":"Rutherford Rd"}],"town":"Ashford","postcode":"TN25
+        4BN"},"phoneNumbers":[{"alias":"Default","number":"0123 361 9360"}]},"geo":{"coordinates":{"longitude":0.87163,"latitude":51.16141}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"63fcae81-f36b-43e1-b8c1-4c6b7e26a455","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":103},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Cross
+        Ln Farm"},{"lineNumber":2,"text":"Nuneaton Rd"},{"lineNumber":3,"text":"Mancetter"}],"town":"Atherstone","postcode":"CV9
+        1RF"},"phoneNumbers":[{"alias":"Default","number":"0182 771 5511"}]},"geo":{"coordinates":{"longitude":-1.5229,"latitude":52.56218}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"208f50c3-870b-46f0-8c1a-f46a87e5d863","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":104},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Old
+        Toll"},{"lineNumber":2,"text":"Holmston"}],"town":"Ayr","postcode":"KA6 5JJ"},"phoneNumbers":[{"alias":"Default","number":"0129
+        229 4750"}]},"geo":{"coordinates":{"longitude":-4.58838,"latitude":55.45503}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"0900","close":"1800"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"c8430493-7861-4327-ab84-86e454d424f5","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":105},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Durham
+        Rd"}],"town":"Birtley","postcode":"DH3 2BQ"},"phoneNumbers":[{"alias":"Default","number":"0191
+        410 2556"}]},"geo":{"coordinates":{"longitude":-1.5768,"latitude":54.89281}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"b7939ca6-86b1-4b2c-859b-7107f64a6b66","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":106},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"75
+        Kings Inch Dr"},{"lineNumber":2,"text":"Renfrew"}],"town":"Glasgow","postcode":"G51
+        4FB"},"phoneNumbers":[{"alias":"Default","number":"0141 886 8660"}]},"geo":{"coordinates":{"longitude":-4.35838,"latitude":55.8696}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"0900","close":"1800"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"00810abb-1e0e-4418-9019-bb43c68fa960","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":107},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Orton
+        Grange"}],"town":"Carlisle","postcode":"CA5 6LB"},"phoneNumbers":[{"alias":"Default","number":"0122
+        871 3520"}]},"geo":{"coordinates":{"longitude":-3.00803,"latitude":54.85668}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"b7067fdf-4764-432f-8125-c8f60703f004","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":108},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Barlborough
+        Links"},{"lineNumber":1,"text":"4 Highwood Way"}],"town":"Chesterfield","postcode":"S43
+        4XN"},"phoneNumbers":[{"alias":"Default","number":"0124 657 1650"}]},"geo":{"coordinates":{"longitude":-1.28182,"latitude":53.27973}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"8ce095bf-630e-4562-aae3-c2e6abc312a1","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":109},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Siddington"}],"town":"Cirencester","postcode":"GL7
+        6EU"},"phoneNumbers":[{"alias":"Default","number":"0128 588 4300"}]},"geo":{"coordinates":{"longitude":-1.94192,"latitude":51.70039}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}}]}'
+    http_version: 
+  recorded_at: Sat, 20 Aug 2016 10:36:35 GMT
+- request:
+    method: get
+    uri: https://dev.tescolabs.com/locations/search
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Ocp-Apim-Subscription-Key:
+      - TESCO_API_KEY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '9505'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Sat, 20 Aug 2016 10:36:33 GMT
+      Dc1:
+      - AWS1
+      Traceid:
+      - 1a5008bd-9e49-495e-a2c8-12aa5d372d53
+      X-Interfaceversion:
+      - v3
+      X-Response-Time:
+      - 4ms
+      Date:
+      - Sat, 20 Aug 2016 10:36:32 GMT
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833ab","name":"Tesco
+        Aylesford CFC","altIds":{"branchNumber":5998},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Priory
+        Park"},{"lineNumber":1,"text":"Mills Road"}],"town":"Aylesford","postcode":"ME20
+        7PP"}},"geo":{"coordinates":{"longitude":0.46399,"latitude":51.289805}},"classification":{"category":"CFC"},"status":{"currentStatus":"Trading"},"facilities":[{"name":"DBT"}]}},{"location":{"id":"8d72afa9-3f2e-4b23-9c6a-9f0d842833a9","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":101},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Whitemyres,
+        Lang Stracht"},{"lineNumber":1,"text":"New Park Farm"}],"town":"Aberdeen","postcode":"AB15
+        6AX"},"phoneNumbers":[{"alias":"Default","number":"0122 468 6000"}]},"geo":{"coordinates":{"longitude":-2.17827,"latitude":57.15158}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0600","close":"2400"},"tu":{"isOpen":"true","open":"0600","close":"2400"},"we":{"isOpen":"true","open":"0600","close":"2400"},"th":{"isOpen":"true","open":"0600","close":"2400"},"fr":{"isOpen":"true","open":"0600","close":"2400"},"sa":{"isOpen":"true","open":"0600","close":"2400"},"su":{"isOpen":"true","open":"0900","close":"1800"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"1710c43c-197e-4416-9478-cf5d0107440a","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":102},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Eureka
+        Leisure Park"},{"lineNumber":1,"text":"Rutherford Rd"}],"town":"Ashford","postcode":"TN25
+        4BN"},"phoneNumbers":[{"alias":"Default","number":"0123 361 9360"}]},"geo":{"coordinates":{"longitude":0.87163,"latitude":51.16141}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"63fcae81-f36b-43e1-b8c1-4c6b7e26a455","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":103},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Cross
+        Ln Farm"},{"lineNumber":2,"text":"Nuneaton Rd"},{"lineNumber":3,"text":"Mancetter"}],"town":"Atherstone","postcode":"CV9
+        1RF"},"phoneNumbers":[{"alias":"Default","number":"0182 771 5511"}]},"geo":{"coordinates":{"longitude":-1.5229,"latitude":52.56218}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"208f50c3-870b-46f0-8c1a-f46a87e5d863","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":104},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Old
+        Toll"},{"lineNumber":2,"text":"Holmston"}],"town":"Ayr","postcode":"KA6 5JJ"},"phoneNumbers":[{"alias":"Default","number":"0129
+        229 4750"}]},"geo":{"coordinates":{"longitude":-4.58838,"latitude":55.45503}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"0900","close":"1800"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"c8430493-7861-4327-ab84-86e454d424f5","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":105},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Durham
+        Rd"}],"town":"Birtley","postcode":"DH3 2BQ"},"phoneNumbers":[{"alias":"Default","number":"0191
+        410 2556"}]},"geo":{"coordinates":{"longitude":-1.5768,"latitude":54.89281}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"b7939ca6-86b1-4b2c-859b-7107f64a6b66","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":106},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"75
+        Kings Inch Dr"},{"lineNumber":2,"text":"Renfrew"}],"town":"Glasgow","postcode":"G51
+        4FB"},"phoneNumbers":[{"alias":"Default","number":"0141 886 8660"}]},"geo":{"coordinates":{"longitude":-4.35838,"latitude":55.8696}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"0900","close":"1800"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"00810abb-1e0e-4418-9019-bb43c68fa960","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":107},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Orton
+        Grange"}],"town":"Carlisle","postcode":"CA5 6LB"},"phoneNumbers":[{"alias":"Default","number":"0122
+        871 3520"}]},"geo":{"coordinates":{"longitude":-3.00803,"latitude":54.85668}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"b7067fdf-4764-432f-8125-c8f60703f004","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":108},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":2,"text":"Barlborough
+        Links"},{"lineNumber":1,"text":"4 Highwood Way"}],"town":"Chesterfield","postcode":"S43
+        4XN"},"phoneNumbers":[{"alias":"Default","number":"0124 657 1650"}]},"geo":{"coordinates":{"longitude":-1.28182,"latitude":53.27973}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}},{"location":{"id":"8ce095bf-630e-4562-aae3-c2e6abc312a1","name":"Dobbies
+        Garden Centre","altIds":{"branchNumber":109},"region":{"isoCountryCode":"GB"},"contact":{"address":{"lines":[{"lineNumber":1,"text":"Siddington"}],"town":"Cirencester","postcode":"GL7
+        6EU"},"phoneNumbers":[{"alias":"Default","number":"0128 588 4300"}]},"geo":{"coordinates":{"longitude":-1.94192,"latitude":51.70039}},"classification":{"type":"Dobbies","category":"Store"},"status":{"currentStatus":"Trading"},"openingHours":[{"type":"Trading","standardOpeningHours":{"mo":{"isOpen":"true","open":"0900","close":"1900"},"tu":{"isOpen":"true","open":"0900","close":"1900"},"we":{"isOpen":"true","open":"0900","close":"1900"},"th":{"isOpen":"true","open":"0900","close":"1900"},"fr":{"isOpen":"true","open":"0900","close":"1900"},"sa":{"isOpen":"true","open":"0900","close":"1800"},"su":{"isOpen":"true","open":"1030","close":"1630"}}}],"facilities":[{"name":"ASSISTANCE_DOGS","tags":["enabling"]}]}}]}'
+    http_version: 
+  recorded_at: Sat, 20 Aug 2016 10:36:35 GMT
+recorded_with: VCR 3.0.3
