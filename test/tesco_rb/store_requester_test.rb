@@ -27,10 +27,18 @@ class StoreRequesterTest < Minitest::Test
   end
 
   def test_store_near
-    assert client.store(near: 'SW5 4YY')
-    assert client.store(filter: 'isoCountryCode:GB AND category:Store AND facilities:DBT')
-    assert client.store(like: 'like=name:^UnlikelyName')
-    assert client.store(near: 'SW5 4YY', limit: 30)
+    sw_store = client.store(near: 'SW5 4YY').first
+    assert_equal sw_store.address.postcode, 'SW7 4SS'
+    filter = 'isoCountryCode:GB AND category:Store AND facilities:DBT'
+    gb_store = client.store(filter: filter).first
+    assert_equal gb_store.region, { 'isoCountryCode' => 'GB' }
+    assert_equal gb_store.classification, { 'type' => 'Superstore', 'category' => 'Store' }
+    assert gb_store.facilities.include?({ 'name' => 'DBT' })
+    non_existant = client.store(like: 'like=name:^UnlikelyName')
+    assert_empty non_existant
+    combined = client.store(near: 'SW5 4YY', limit: 30)
+    assert_equal combined.count, 30
+    assert_equal combined.first.address.postcode,  'SW7 4SS'
   end
 
 end
