@@ -1,5 +1,5 @@
 * TescoRb
-[[[[https://api.travis-ci.org/wmmc/tesco_rb.svg]]]]
+[[https://api.travis-ci.org/wmmc/tesco_rb.svg]]
 
 A ruby gem for interacting with the [[https://devportal.tescolabs.com/docs/services/][Tesco Api]].
 Currently it supports [[https://devportal.tescolabs.com/docs/services/56c73b1bf205fd0ed81dbe7a][Grocery]] & [[https://devportal.tescolabs.com/docs/services/5731ed21611a4b2968547c5f][Store Location]] end points.
