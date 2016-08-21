@@ -2,6 +2,7 @@ require_relative 'item'
 
 # TODO: subclass these requesters as they share loads of logic.
 module TescoRb
+
   class ItemRequester
     def create_representations(client, hash_args)
       response = request(client, update_args(hash_args))
@@ -9,6 +10,9 @@ module TescoRb
       products.map do |json|
         Item.new(json)
       end
+    rescue => e
+      p e
+      []
     end
 
     private

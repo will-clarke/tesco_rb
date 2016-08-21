@@ -23,6 +23,10 @@ module TescoRb
       ItemRequester.new.create_representations(self, options)
     end
 
+    def search(item_name)
+      item(query: item_name, limit: 10)
+    end
+
     def get(url, options = {})
       self.class.get(url, options.merge(default_options))
     end
