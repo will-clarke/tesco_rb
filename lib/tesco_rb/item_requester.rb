@@ -9,8 +9,6 @@ module TescoRb
       products.map do |json|
         Item.new(json)
       end
-    rescue => e
-      p e
     end
 
     private
@@ -23,15 +21,6 @@ module TescoRb
 
     def request(client, hash_args)
       client.get '/grocery/products', query: hash_args
-    rescue => e
-      p e
-    end
-
-    def parse_json(request)
-      JSON.parse(request.body)
-    rescue JSON::ParserError => e
-      p e
-      { 'results' => [] }
     end
 
   end

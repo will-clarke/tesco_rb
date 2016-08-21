@@ -1,4 +1,8 @@
 * TescoRb
+A ruby gem for interacting with the [[https://devportal.tescolabs.com/docs/services/][Tesco Api]].
+Currently it supports [[https://devportal.tescolabs.com/docs/services/56c73b1bf205fd0ed81dbe7a][Grocery]] & [[https://devportal.tescolabs.com/docs/services/5731ed21611a4b2968547c5f][Store Location]] end points.
+
+
 ** Usage Examples:
 
 #+BEGIN_SRC ruby
@@ -43,3 +47,5 @@ $ gem install tesco_rb
     - More examples about returned objects??
     - OpeningHours Object
     - GeoLocation Object
+    - Get rid of linting errors
+    - Think about exceptions / error handling

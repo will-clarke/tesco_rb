@@ -10,6 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['wmmclarke@gmail.com']
 
   spec.summary       = 'A wrapper to the Tesco API'
+  spec.description   = 'Navigate the Tesco API: https://devportal.tescolabs.com/docs/services/'
+
   spec.homepage      = 'https://github.com/wmmc/tesco_rb'
   spec.license       = 'MIT'
 

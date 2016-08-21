@@ -1,5 +1,5 @@
-require 'tesco_rb/store_requester'
-require 'tesco_rb/item_requester'
+require_relative 'store_requester'
+require_relative 'item_requester'
 require 'httparty'
 
 module TescoRb
@@ -11,6 +11,7 @@ module TescoRb
     base_uri 'https://dev.tescolabs.com/'
 
     def initialize(api_key)
+      fail 'invalid API Key' unless api_key.is_a?(String) && api_key.length > 10
       @api_key = api_key
     end
 
@@ -28,7 +29,7 @@ module TescoRb
 
     def default_options
       { headers:
-          { 'Ocp-Apim-Subscription-Key' => ENV['TESCO_API_KEY'] } }
+          { 'Ocp-Apim-Subscription-Key' => api_key } }
     end
   end
 end
