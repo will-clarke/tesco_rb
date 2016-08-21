@@ -1,4 +1,6 @@
 * TescoRb
+[[[[https://api.travis-ci.org/wmmc/tesco_rb.svg]]]]
+
 A ruby gem for interacting with the [[https://devportal.tescolabs.com/docs/services/][Tesco Api]].
 Currently it supports [[https://devportal.tescolabs.com/docs/services/56c73b1bf205fd0ed81dbe7a][Grocery]] & [[https://devportal.tescolabs.com/docs/services/5731ed21611a4b2968547c5f][Store Location]] end points.
 
@@ -9,19 +11,19 @@ client = TescoRb.new(YOUR_API_KEY)
 
 # To search for items:
 client.search('bananas')
-# => [#<TescoRb::Item:0x007fae80828fa8
-#         @AverageSellingUnitWeight=2.402,
-#         @ContentsMeasureType="KG",
-#         @ContentsQuantity=1.0,
-#         @PromotionDescription="25 extra points on any bananas",
-#         @UnitOfSale=3,
-#         @UnitQuantity="KG",
-#         @image="http://img.tesco.com/Groceries/pi/000/0261480000000/IDShot_90x90.jpg",
-#         @name="Tesco Bananas Loose",
-#         @price=0.68,
-#         @tpnb=50502269,
-#         @unitprice=0.68>
-#     ..... ]
+#        => [#<TescoRb::Item:0x007fae80828fa8
+#                @AverageSellingUnitWeight=2.402,
+#                @ContentsMeasureType="KG",
+#                @ContentsQuantity=1.0,
+#                @PromotionDescription="25 extra points on any bananas",
+#                @UnitOfSale=3,
+#                @UnitQuantity="KG",
+#                @image="http://img.tesco.com/Groceries/pi/000/0261480000000/IDShot_90x90.jpg",
+#                @name="Tesco Bananas Loose",
+#                @price=0.68,
+#                @tpnb=50502269,
+#                @unitprice=0.68>
+#            ..... ]
 
 # Another way to search for items:
 client.item(query: 'bananas', limit: 10)             # page 1
@@ -33,19 +35,19 @@ client.store(near: 'SW5 4YY', limit: 5)
 client.store(filter: 'isoCountryCode:GB AND category:Store AND facilities:DBT')
 
 # An example shop:
-#    <TescoRb::Store:0x007fae80ca1ad0
-#      @address=
-#       #<TescoRb::Address:0x007fae80ca1300
-#        @lines=
-#         [{"lineNumber"=>1, "text"=>"87-93 Gloucester Rd"},
-#          {"lineNumber"=>2, "text"=>"South Kensington"}],
-#        @postcode="SW7 4SS",
-#        @town="London">,
-#      @altIds={"branchNumber"=>2745},
-#      @classification={"type"=>"Express", "category"=>"Store"},
-#      @facilities=[]
-#      @region={"isoCountryCode"=>"GB"},
-#      @status={"currentStatus"=>"Trading"}>
+#            <TescoRb::Store:0x007fae80ca1ad0
+#              @address=
+#               #<TescoRb::Address:0x007fae80ca1300
+#                @lines=
+#                 [{"lineNumber"=>1, "text"=>"87-93 Gloucester Rd"},
+#                  {"lineNumber"=>2, "text"=>"South Kensington"}],
+#                @postcode="SW7 4SS",
+#                @town="London">,
+#              @altIds={"branchNumber"=>2745},
+#              @classification={"type"=>"Express", "category"=>"Store"},
+#              @facilities=[]
+#              @region={"isoCountryCode"=>"GB"},
+#              @status={"currentStatus"=>"Trading"}>
 #+END_SRC
 
 ** Installation
@@ -69,11 +71,7 @@ $ gem install tesco_rb
 #+END_SRC
 
 *** Todo
-    - ~client.item.search('bananas')~ syntax; add ~.search~ method
-      - This would involve creating new 'items' holding class (currently just an Array)
     - DRY / subclass requesters
-    - Sort out travis CI
-    - More examples about returned objects??
     - OpeningHours Object
     - GeoLocation Object
     - Get rid of linting errors
