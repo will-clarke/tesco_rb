@@ -2,6 +2,10 @@ require 'test_helper'
 
 class ItemTest < Minitest::Test
 
+  # to test: 1: dynamic initialization
+  #          2: equality
+
+
   # TODO: Create these tests
   # Also, potentailly create '.search' syntax:
   #    client.item.search('bananas')
